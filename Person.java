@@ -60,7 +60,7 @@ public class Person {
     }
 }
 
-class FamilyTree {
+public class FamilyTree {
     List<Person> members;
     public FamilyTree() {
         members = new ArrayList<>();
