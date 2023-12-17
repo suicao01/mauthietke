@@ -2,7 +2,7 @@ public interface Strategy {
     void sort(int []arr);
 }
 
-class BubbleSort implements Strategy{
+public class BubbleSort implements Strategy{
 
     @Override
     public void sort(int[] arr) {
@@ -18,7 +18,7 @@ class BubbleSort implements Strategy{
     }
 }
 
-class SelectionSort implements Strategy{
+public class SelectionSort implements Strategy{
     @Override
     public void sort(int[] arr) {
         for (int i=0;i<arr.length-1;i++) {
@@ -34,7 +34,7 @@ class SelectionSort implements Strategy{
     }
 }
 
-class SortStrategy {
+public class SortStrategy {
     private Strategy strategy;
     public SortStrategy(Strategy strategy) {
         this.strategy = strategy;
@@ -46,7 +46,7 @@ class SortStrategy {
 }
 
 
-class Main {
+public class Main {
     public static void main(String[] args) {
 
         int[] a= new int[]{4, 6, 7, 1, 23};
